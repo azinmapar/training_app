@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:video_player/CustomizedWidgets/CustomPlanContainer.dart';
+import 'package:video_player/app_colors.dart';
+import 'package:video_player/consts.dart';
+import 'CustomizedWidgets/CustomAppBar.dart';
+import 'CustomizedWidgets/CustomFirstContainer.dart';
+import 'CustomizedWidgets/CustomSecondContainer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +16,31 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: AppColor.kHomePageBackground,
+      body: Padding(
+        padding: EdgeInsets.all(k8Width),
+        child: SafeArea(
+          child: Column(
+            children: [
+              //Transparent AppBar
+              const CustomAppBar(),
+              SizedBox(
+                height: k20Height,
+              ),
+              //your program details
+              const CustomPlanContainer(),
+              //first blue container
+              const CustomFirstContainer(),
+              SizedBox(
+                height: k5Height,
+              ),
+              //second motivation container
+              const CustomSecondContainer(),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
