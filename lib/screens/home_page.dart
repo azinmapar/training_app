@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/CustomizedWidgets/CustomPlanContainer.dart';
-import 'package:video_player/app_colors.dart';
-import 'package:video_player/consts.dart';
-import 'CustomizedWidgets/CustomAppBar.dart';
-import 'CustomizedWidgets/CustomAreasListView.dart';
-import 'CustomizedWidgets/CustomFirstContainer.dart';
-import 'CustomizedWidgets/CustomSecondContainer.dart';
-import 'CustomizedWidgets/CustomTitleOfFocusArea.dart';
+import 'package:video_player/customized_widgets/CustomPlanContainer.dart';
+import 'package:video_player/consts/app_colors.dart';
+import 'package:video_player/consts/consts.dart';
+import '../customized_widgets/CustomAppBar.dart';
+import '../customized_widgets/CustomAreasListView.dart';
+import '../customized_widgets/CustomFirstContainer.dart';
+import '../customized_widgets/CustomSecondContainer.dart';
+import '../customized_widgets/CustomTitleOfFocusArea.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

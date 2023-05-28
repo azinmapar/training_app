@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'app_colors.dart';
+import './app_colors.dart';
 
 //phone I'm testing on:
 //height: 707.4285714285714

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../consts.dart';
+import '../consts/consts.dart';
 import 'CustomCointainerFocusArea.dart';
 
 class CustomAreasListView extends StatelessWidget {

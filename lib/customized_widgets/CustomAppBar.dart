@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../consts.dart';
+import '../consts/consts.dart';
 import 'custom_appbar_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
