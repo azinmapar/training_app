@@ -10,10 +10,10 @@ class CustomFirstContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: k20Width, right: k20Width, top: k20Height),
+      padding: EdgeInsets.only(left: k20Width, right: k20Width, top: k10Height),
       child: Container(
         //dimensions
-        height: k220Height,
+        height: k200Height,
         width: kScreenWidth,
         decoration: BoxDecoration(
           //gradient color

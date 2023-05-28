@@ -3,8 +3,10 @@ import 'package:video_player/CustomizedWidgets/CustomPlanContainer.dart';
 import 'package:video_player/app_colors.dart';
 import 'package:video_player/consts.dart';
 import 'CustomizedWidgets/CustomAppBar.dart';
+import 'CustomizedWidgets/CustomAreasListView.dart';
 import 'CustomizedWidgets/CustomFirstContainer.dart';
 import 'CustomizedWidgets/CustomSecondContainer.dart';
+import 'CustomizedWidgets/CustomTitleOfFocusArea.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,9 +27,6 @@ class _HomePageState extends State<HomePage> {
             children: [
               //Transparent AppBar
               const CustomAppBar(),
-              SizedBox(
-                height: k20Height,
-              ),
               //your program details
               const CustomPlanContainer(),
               //first blue container
@@ -37,6 +36,10 @@ class _HomePageState extends State<HomePage> {
               ),
               //second motivation container
               const CustomSecondContainer(),
+              //title of area of focus
+              const CustomTitleOfFocusArea(),
+              //list view
+              const CustomAreasListView(),
             ],
           ),
         ),

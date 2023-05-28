@@ -13,7 +13,7 @@ class CustomSecondContainer extends StatelessWidget {
       padding: EdgeInsets.only(left: k20Width, right: k20Width),
       child: SizedBox(
         width: kScreenWidth,
-        height: k180Height,
+        height: k160Height,
         child: Stack(
           children: [
             //background image

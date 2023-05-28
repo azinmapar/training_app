@@ -17,6 +17,7 @@ const String k60MinText = '60 min';
 const String kHomePageDetailTitleText = 'You are doing great';
 const String kHomePagePlanText1 = 'Keep it up\n';
 const String kHomePagePlanText2 = 'Stick to your plan';
+const String kAreaOfFocusTitleText = 'Area of Focus';
 
 //styles
 final TextStyle kAppBarTitleStyle = TextStyle(
@@ -52,15 +53,24 @@ final TextStyle kNextWorkoutInfoTextStyle = TextStyle(
 final TextStyle kTimerInContainerTextStyle = TextStyle(
   color: AppColor.kHomePageContainerTextSmall,
   fontSize: k15FontSize,
+  fontFamily: kFontFamily,
 );
 final TextStyle kHomePageDetailTitleTextStyle = TextStyle(
   color: AppColor.kHomePageDetail,
   fontSize: k18FontSize,
   fontWeight: FontWeight.bold,
+  fontFamily: kFontFamily,
 );
 final TextStyle kHomePagePlanTextStyle = TextStyle(
   color: AppColor.kHomePagePlanColor,
   fontSize: k16FontSize,
+  fontFamily: kFontFamily,
+);
+final TextStyle kAreaOfFocusTitleTextStyle = TextStyle(
+  fontSize: k25FontSize,
+  fontWeight: FontWeight.w500,
+  color: AppColor.kHomePageTitle,
+  fontFamily: kFontFamily,
 );
 
 //doubles
@@ -102,7 +112,12 @@ final double k120Height = 0.17 * kScreenHeight;
 final double k220Height = 0.31 * kScreenHeight;
 final double k200Height = 0.28 * kScreenHeight;
 final double k180Height = 0.25 * kScreenHeight;
+final double k160Height = 0.22 * kScreenHeight;
 final double k20Width = 0.05 * kScreenWidth;
+final double k30Width = 0.072 * kScreenWidth;
 final double k150Width = 0.36 * kScreenWidth;
 final double k8Width = 0.02 * kScreenWidth;
 final double k10Width = 0.025 * kScreenWidth;
+final double kAreaContainerWidth =
+    (kScreenWidth - (3 * k30Width) - (2 * k8Width)) / 2;
+final double kAreaContainerHeight = kAreaContainerWidth;
