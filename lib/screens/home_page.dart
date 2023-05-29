@@ -1,21 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/customized_widgets/CustomPlanContainer.dart';
+import 'package:video_player/customized_widgets/custom_plan_container.dart';
 import 'package:video_player/consts/app_colors.dart';
 import 'package:video_player/consts/consts.dart';
-import '../customized_widgets/CustomAppBar.dart';
-import '../customized_widgets/CustomAreasListView.dart';
-import '../customized_widgets/CustomFirstContainer.dart';
-import '../customized_widgets/CustomSecondContainer.dart';
-import '../customized_widgets/CustomTitleOfFocusArea.dart';
+import '../customized_widgets/custom_app_bar.dart';
+import '../customized_widgets/custom_areas_listview.dart';
+import '../customized_widgets/custom_first_container.dart';
+import '../customized_widgets/custom_second_container.dart';
+import '../customized_widgets/custom_title_of_focus_area.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,9 +26,8 @@ class _HomePageState extends State<HomePage> {
               const CustomPlanContainer(),
               //first blue container
               const CustomFirstContainer(),
-              SizedBox(
-                height: k5Height,
-              ),
+              //space between
+              SizedBox(height: k5Height),
               //second motivation container
               const CustomSecondContainer(),
               //title of area of focus

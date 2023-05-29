@@ -21,7 +21,7 @@ class CustomContainerFocusArea extends StatelessWidget {
         color: AppColor.kWhiteColor,
         borderRadius: k20CircularBorderRadius,
         image: DecorationImage(
-          image: AssetImage(
+          image: NetworkImage(
             imagePath,
           ),
         ),
