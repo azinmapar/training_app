@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../consts/app_colors.dart';
 import '../consts/consts.dart';
+import 'package:get/get.dart';
 
 class CustomSecondPageAppBar extends StatelessWidget {
   const CustomSecondPageAppBar({
@@ -15,7 +16,9 @@ class CustomSecondPageAppBar extends StatelessWidget {
         icon: const Icon(Icons.arrow_back_ios_new_rounded),
         color: AppColor.kSecondPageTopIconColor,
         iconSize: k20IconSize,
-        onPressed: () {},
+        onPressed: () {
+          Get.back();
+        },
       ),
       //info button
       actions: [

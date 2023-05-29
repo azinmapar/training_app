@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   http: ^1.0.0
+  get: ^4.6.5
 
 
 dev_dependencies:
@@ -80,7 +81,7 @@ flutter:
   fonts:
   - family: Rubik
     fonts:
-    - asset: fonts/Rubik-VariableFont_wght.ttf
+      - asset: fonts/Rubik-VariableFont_wght.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

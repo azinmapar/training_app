@@ -21,6 +21,8 @@ const String kHomePageDetailTitleText = 'You are doing great';
 const String kHomePagePlanText1 = 'Keep it up\n';
 const String kHomePagePlanText2 = 'Stick to your plan';
 const String kAreaOfFocusTitleText = 'Area of Focus';
+const String kCircuitsText = 'Circuit 1: Legs Toning';
+const String kSetsText = '3 sets';
 
 //doubles
 const double kZeroElevationAppBar = 0.0;
@@ -54,6 +56,8 @@ final double k20IconSize =
     SizerUtil.deviceType == DeviceType.mobile ? 20.0 : 35.0;
 final double k60IconSize =
     SizerUtil.deviceType == DeviceType.mobile ? 60.0 : 75.0;
+final double k30IconSize =
+    SizerUtil.deviceType == DeviceType.mobile ? 30.0 : 45.0;
 final double k20Height = 0.03 * kScreenHeight;
 final double k10Height = 0.015 * kScreenHeight;
 final double k30Height = 0.04 * kScreenHeight;
@@ -132,4 +136,16 @@ final TextStyle kSecondPageTitleTextStyle = TextStyle(
   fontFamily: kFontFamily,
   fontSize: k25FontSize,
   fontWeight: FontWeight.bold,
+);
+final TextStyle kCircuitsTextStyles = TextStyle(
+  color: AppColor.kCircuitsColor,
+  fontFamily: kFontFamily,
+  fontSize: k20FontSize,
+  fontWeight: FontWeight.w900,
+);
+final TextStyle kSetsTextStyle = TextStyle(
+  color: AppColor.kSetsColor,
+  fontFamily: kFontFamily,
+  fontSize: k15FontSize,
+  fontWeight: FontWeight.w700,
 );

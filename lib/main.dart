@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/screens/video_info.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'screens/home_page.dart';
 import 'package:sizer/sizer.dart';
 import 'dart:io';
@@ -9,6 +9,7 @@ void main() async {
   runApp(const MyApp());
 }
 
+//that error for certificate on api
 class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) {
-        return MaterialApp(
+        return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/consts/app_colors.dart';
+import 'package:video_player/screens/video_info.dart';
 import '../consts/consts.dart';
+import 'package:get/get.dart';
 
 class CustomPlanContainer extends StatelessWidget {
   const CustomPlanContainer({
@@ -26,14 +28,16 @@ class CustomPlanContainer extends StatelessWidget {
             style: kDetailsTextStyle,
           ),
           //arrow icon
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
+          InkWell(
+            onTap: () {
+              Get.to(const VideoInfo());
+            },
+            child: Icon(
               Icons.arrow_forward_rounded,
               color: AppColor.kHomePageIcons,
               size: k25IconSize,
             ),
-          )
+          ),
         ],
       ),
     );
