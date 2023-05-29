@@ -30,7 +30,7 @@ class CustomPlanContainer extends StatelessWidget {
           //arrow icon
           InkWell(
             onTap: () {
-              Get.to(const VideoInfo());
+              Get.to(() => const VideoInfo());
             },
             child: Icon(
               Icons.arrow_forward_rounded,

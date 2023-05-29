@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/consts/app_colors.dart';
 import 'package:video_player/consts/consts.dart';
+import '../api/get_data.dart';
+import 'custom_training_list_view.dart';
 
 class CustomDetailContainer extends StatefulWidget {
   const CustomDetailContainer({
@@ -12,6 +14,23 @@ class CustomDetailContainer extends StatefulWidget {
 }
 
 class _CustomDetailContainerState extends State<CustomDetailContainer> {
+  List info = [];
+
+  void getData() async {
+    InfoModel infoModel = InfoModel();
+    dynamic i = await infoModel.getVideoInfo();
+    setState(() {
+      info = i ?? [];
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -54,65 +73,14 @@ class _CustomDetailContainerState extends State<CustomDetailContainer> {
                   ),
                 ],
               ),
+              //space
+              SizedBox(
+                height: k5Height,
+              ),
               //items
               Expanded(
-                child: ListView.builder(
-                  itemCount: 4,
-                  itemBuilder: (_, i) {
-                    return Padding(
-                      padding: EdgeInsets.only(
-                          top: k10Height,
-                          bottom: k10Height,
-                          left: k10Width,
-                          right: k10Width),
-                      child: GestureDetector(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: AppColor.kWhiteColor,
-                            boxShadow: [
-                              BoxShadow(
-                                offset: const Offset(5, 5),
-                                blurRadius: 10,
-                                color: AppColor.kGradientSecond,
-                              ),
-                            ],
-                          ),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Image.asset(
-                                    'assets/ex1.png',
-                                  ),
-                                  const Column(
-                                    children: [
-                                      Text(
-                                        'title',
-                                      ),
-                                      Text(
-                                        'subtitle',
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Container(
-                                    child: const Text(
-                                      'rest',
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              )
+                child: CustomTrainingListView(info: info),
+              ),
             ],
           ),
         ),

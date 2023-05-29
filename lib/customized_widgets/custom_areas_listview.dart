@@ -19,9 +19,8 @@ class _CustomAreasListViewState extends State<CustomAreasListView> {
     InfoModel infoModel = InfoModel();
     dynamic i = await infoModel.getInfo();
     setState(() {
-      info = i;
+      info = i ?? [];
     });
-    print(info);
   }
 
   @override

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/consts/app_colors.dart';
 import 'package:video_player/consts/consts.dart';
-
 import '../customized_widgets/custom_detail_container.dart';
 import '../customized_widgets/custom_information_tags.dart';
 import '../customized_widgets/custom_second_page_appbar.dart';

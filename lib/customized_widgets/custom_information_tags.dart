@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../consts/app_colors.dart';
 import '../consts/consts.dart';
 import 'custom_tags.dart';
 

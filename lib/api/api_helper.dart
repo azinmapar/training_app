@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -12,7 +13,7 @@ class ApiHelper {
       String data = response.body;
       return jsonDecode(data);
     } else {
-      print(response.statusCode);
+      debugPrint(response.statusCode as String?);
     }
   }
 }

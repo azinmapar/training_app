@@ -8,6 +8,8 @@ import './app_colors.dart';
 
 //api urls
 const String kInfoUrl = 'https://sportapi.etokco.ir/Info/GetAllInfo';
+const String kVideoInfoUrl =
+    'https://sportapi.etokco.ir/VideoInfo/GetAllVideoInfo';
 
 //titles
 const String kTrainingTitle = 'Training';
@@ -23,9 +25,12 @@ const String kHomePagePlanText2 = 'Stick to your plan';
 const String kAreaOfFocusTitleText = 'Area of Focus';
 const String kCircuitsText = 'Circuit 1: Legs Toning';
 const String kSetsText = '3 sets';
+const String kDurationText = '30 seconds';
+const String kRestText = '15s Rest';
 
 //doubles
 const double kZeroElevationAppBar = 0.0;
+const double kDottedLineDashRadius = 2.0;
 
 //Radius
 const Radius k10CircularRadius = Radius.circular(10.0);
@@ -66,7 +71,9 @@ final double k120Height = 0.17 * kScreenHeight;
 final double k220Height = 0.31 * kScreenHeight;
 final double k200Height = 0.28 * kScreenHeight;
 final double k180Height = 0.25 * kScreenHeight;
+final double k18Height = 0.025 * kScreenHeight;
 final double k160Height = 0.22 * kScreenHeight;
+final double k80Height = 0.11 * kScreenHeight;
 final double k20Width = 0.05 * kScreenWidth;
 final double k30Width = 0.072 * kScreenWidth;
 final double k15Width = k30Width / 2;
@@ -74,6 +81,7 @@ final double k150Width = 0.36 * kScreenWidth;
 final double k8Width = 0.02 * kScreenWidth;
 final double k4Width = 0.01 * kScreenWidth;
 final double k10Width = 0.025 * kScreenWidth;
+final double k80Width = 0.194 * kScreenWidth;
 final double kAreaContainerWidth =
     (kScreenWidth - (4 * k15Width) - (2 * k8Width)) / 2;
 final double kAreaContainerHeight = kAreaContainerWidth;
@@ -148,4 +156,17 @@ final TextStyle kSetsTextStyle = TextStyle(
   fontFamily: kFontFamily,
   fontSize: k15FontSize,
   fontWeight: FontWeight.w700,
+);
+final TextStyle kSecondPageExerciseTitleTextStyle = TextStyle(
+  fontSize: k18FontSize,
+  fontWeight: FontWeight.bold,
+  fontFamily: kFontFamily,
+);
+final TextStyle kSecondPageExerciseDurationTextStyle = TextStyle(
+  fontFamily: kFontFamily,
+  color: Colors.grey[500],
+);
+final TextStyle kRestTextStyle = TextStyle(
+  fontFamily: kFontFamily,
+  color: AppColor.kRestColor,
 );

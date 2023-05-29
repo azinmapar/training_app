@@ -7,4 +7,10 @@ class InfoModel {
     var infoData = await apiHelper.getData();
     return infoData;
   }
+
+  Future getVideoInfo() async {
+    ApiHelper apiHelper = ApiHelper(kVideoInfoUrl);
+    var infoData = await apiHelper.getData();
+    return infoData;
+  }
 }

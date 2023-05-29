@@ -19,5 +19,8 @@ class AppColor {
   static Color kLoopColor = const Color(0xFF6d8dea);
   static Color kSetsColor = const Color(0xFF9999a9);
   static Color kCircuitsColor = const Color(0xFF2f2f51);
+  static Color kDurationColor = const Color(0xFFeaeefc);
+  static Color kRestColor = const Color(0xFF839fed);
+  static Color kDottedLineColor = const Color(0xFF839fed);
   static Color kWhiteColor = const Color(0xFFffffff);
 }
