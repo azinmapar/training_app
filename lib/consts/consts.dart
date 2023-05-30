@@ -170,3 +170,18 @@ final TextStyle kRestTextStyle = TextStyle(
   fontFamily: kFontFamily,
   color: AppColor.kRestColor,
 );
+
+//Decorations
+final BoxDecoration kVideoInfoDetailContainerDecoration = BoxDecoration(
+  gradient: LinearGradient(
+    colors: [
+      AppColor.kGradientFirst.withOpacity(0.9),
+      AppColor.kGradientSecond,
+    ],
+    begin: const FractionalOffset(0.0, 0.4),
+    end: Alignment.topRight,
+  ),
+);
+final BoxDecoration kVideoContainerDecoration = BoxDecoration(
+  color: AppColor.kGradientSecond,
+);

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:video_player/consts/app_colors.dart';
 import 'package:video_player/consts/consts.dart';
 import '../api/get_data.dart';
+import 'custom_circuits_title.dart';
 import 'custom_training_list_view.dart';
 
 class CustomDetailContainer extends StatefulWidget {
@@ -47,36 +48,9 @@ class _CustomDetailContainerState extends State<CustomDetailContainer> {
           child: Column(
             children: [
               //title
-              Row(
-                children: [
-                  //circuit text
-                  Text(
-                    kCircuitsText,
-                    style: kCircuitsTextStyles,
-                  ),
-                  //space available between circuits and sets
-                  Expanded(child: Container()),
-                  //loop icon
-                  Icon(
-                    Icons.loop_rounded,
-                    size: k30IconSize,
-                    color: AppColor.kLoopColor,
-                  ),
-                  //space
-                  SizedBox(
-                    width: k10Width,
-                  ),
-                  //set text
-                  Text(
-                    kSetsText,
-                    style: kSetsTextStyle,
-                  ),
-                ],
-              ),
+              const CustomCircuitsTitle(),
               //space
-              SizedBox(
-                height: k5Height,
-              ),
+              SizedBox(height: k5Height),
               //items
               Expanded(
                 child: CustomTrainingListView(info: info),
