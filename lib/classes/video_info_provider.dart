@@ -90,6 +90,11 @@ class PlayVideo extends ChangeNotifier {
     notifyListeners();
   }
 
+  void controllerSeekTo(Duration duration) {
+    controller?.seekTo(duration);
+    notifyListeners();
+  }
+
   void controllerPlay() {
     controller?.play();
     notifyListeners();
