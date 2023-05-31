@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:video_player/classes/VideoInfoProvider.dart';
-import 'package:video_player/consts/consts.dart';
+import '../classes/video_info_provider.dart';
+import '../consts/consts.dart';
 import '../customized_widgets/custom_info_container.dart';
 import '../customized_widgets/custom_video_player_container.dart';
 import '../customized_widgets/custom_detail_container.dart';

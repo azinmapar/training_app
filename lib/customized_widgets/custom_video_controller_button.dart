@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_app/consts/consts.dart';
 import '../consts/app_colors.dart';
 
 class CustomVideoControllerButton extends StatelessWidget {
@@ -17,7 +18,8 @@ class CustomVideoControllerButton extends StatelessWidget {
       onPressed: onPressed,
       icon: Icon(
         icon,
-        color: AppColor.kSecondPageIconColor,
+        color: AppColor.kWhiteColor,
+        size: k36IconSize,
       ),
     );
   }

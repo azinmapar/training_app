@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/consts/app_colors.dart';
-import 'package:video_player/consts/consts.dart';
+import 'package:provider/provider.dart';
+import 'package:training_app/classes/video_info_provider.dart';
 import '../api/get_data.dart';
+import '../consts/app_colors.dart';
+import '../consts/consts.dart';
 import 'custom_circuits_title.dart';
 import 'custom_training_list_view.dart';
 
@@ -34,6 +36,7 @@ class _CustomDetailContainerState extends State<CustomDetailContainer> {
 
   @override
   Widget build(BuildContext context) {
+    infoLength();
     return Expanded(
       child: Container(
         width: kScreenWidth,
@@ -60,5 +63,12 @@ class _CustomDetailContainerState extends State<CustomDetailContainer> {
         ),
       ),
     );
+  }
+
+  void infoLength() {
+    Future.delayed(Duration.zero, () {
+      Provider.of<PlayVideo>(context, listen: false)
+          .setVideoInfoLength(info.length);
+    });
   }
 }

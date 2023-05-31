@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'costume_player_controller.dart';
 import 'custom_video_player.dart';
+import 'custom_video_slider.dart';
 
 class CustomVideoPlayerContainer extends StatelessWidget {
   const CustomVideoPlayerContainer({
@@ -10,13 +10,12 @@ class CustomVideoPlayerContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Column(
-        children: [
-          CustomVideoPlayer(),
-          CustomPlayerController(),
-        ],
-      ),
+    return const Column(
+      children: [
+        CustomVideoPlayer(),
+        CustomVideoSlider(),
+        CustomPlayerController(),
+      ],
     );
   }
 }

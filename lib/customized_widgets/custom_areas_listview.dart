@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/api/get_data.dart';
+import '../api/get_data.dart';
 import '../consts/consts.dart';
 import 'custom_cointainer_focus_area.dart';
 
