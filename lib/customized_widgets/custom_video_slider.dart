@@ -21,14 +21,7 @@ class _CustomVideoSliderState extends State<CustomVideoSlider> {
 
   @override
   Widget build(BuildContext context) {
-    final duration =
-        Provider.of<PlayVideo>(context, listen: false).duration?.inSeconds ?? 0;
-    final head =
-        Provider.of<PlayVideo>(context, listen: false).position?.inSeconds ?? 0;
-    final remained = max(0, duration - head);
-    final minute = convertTwo(remained ~/ 60.0);
-    final sec = convertTwo(remained % 60);
-
+    Provider.of<PlayVideo>(context).setState;
     return SliderTheme(
       data: SliderTheme.of(context).copyWith(
         activeTrackColor: Colors.red[700],

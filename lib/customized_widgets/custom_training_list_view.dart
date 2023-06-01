@@ -74,13 +74,13 @@ class _CustomTrainingListViewState extends State<CustomTrainingListView> {
       return;
     }
 
-    if (Provider.of<PlayVideo>(context, listen: false).duration == null) {
-      Provider.of<PlayVideo>(context, listen: false).setDuration(
-          Provider.of<PlayVideo>(context, listen: false)
-              .controller!
-              .value
-              .duration);
-    }
+    //if (Provider.of<PlayVideo>(context, listen: false).duration == null) {
+    Provider.of<PlayVideo>(context, listen: false).setDuration(
+        Provider.of<PlayVideo>(context, listen: false)
+            .controller!
+            .value
+            .duration);
+    //}
 
     var duration = Provider.of<PlayVideo>(context, listen: false).duration;
     if (duration == null) return;
@@ -95,7 +95,7 @@ class _CustomTrainingListViewState extends State<CustomTrainingListView> {
       if (providerListenFalse.isDisposed) {
         return;
       }
-      providerListenFalse.setProgress(position!.inMilliseconds.ceilToDouble() /
+      providerListenFalse.setProgress(position.inMilliseconds.ceilToDouble() /
           duration.inMilliseconds.ceilToDouble());
     }
     providerListenFalse.setIsPlaying(playing);

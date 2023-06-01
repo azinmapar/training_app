@@ -47,6 +47,8 @@ class _CustomPlayerControllerState extends State<CustomPlayerController> {
       print(head);
     });
 
+    Provider.of<PlayVideo>(context).setState;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
