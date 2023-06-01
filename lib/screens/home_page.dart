@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/customized_widgets/custom_plan_container.dart';
-import 'package:video_player/consts/app_colors.dart';
-import 'package:video_player/consts/consts.dart';
+import '../consts/app_colors.dart';
+import '../consts/consts.dart';
 import '../customized_widgets/custom_app_bar.dart';
 import '../customized_widgets/custom_areas_listview.dart';
 import '../customized_widgets/custom_first_container.dart';
+import '../customized_widgets/custom_plan_container.dart';
 import '../customized_widgets/custom_second_container.dart';
 import '../customized_widgets/custom_title_of_focus_area.dart';
 

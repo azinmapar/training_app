@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/consts/app_colors.dart';
-import 'package:video_player/screens/video_info.dart';
+import '../consts/app_colors.dart';
 import '../consts/consts.dart';
 import 'package:get/get.dart';
+
+import '../screens/video_info.dart';
 
 class CustomPlanContainer extends StatelessWidget {
   const CustomPlanContainer({

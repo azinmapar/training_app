@@ -27,6 +27,9 @@ const String kCircuitsText = 'Circuit 1: Legs Toning';
 const String kSetsText = '3 sets';
 const String kDurationText = '30 seconds';
 const String kRestText = '15s Rest';
+const String kPreparingVideoText = 'Preparing...';
+const String kVideoTextSnackBar = 'Video';
+const String kVideoMessageSnackBar = 'No more videos to play';
 
 //doubles
 const double kZeroElevationAppBar = 0.0;
@@ -63,6 +66,8 @@ final double k60IconSize =
     SizerUtil.deviceType == DeviceType.mobile ? 60.0 : 75.0;
 final double k30IconSize =
     SizerUtil.deviceType == DeviceType.mobile ? 30.0 : 45.0;
+final double k36IconSize =
+    SizerUtil.deviceType == DeviceType.mobile ? 36.0 : 51.0;
 final double k20Height = 0.03 * kScreenHeight;
 final double k10Height = 0.015 * kScreenHeight;
 final double k30Height = 0.04 * kScreenHeight;
@@ -169,6 +174,11 @@ final TextStyle kSecondPageExerciseDurationTextStyle = TextStyle(
 final TextStyle kRestTextStyle = TextStyle(
   fontFamily: kFontFamily,
   color: AppColor.kRestColor,
+);
+final TextStyle kPreparingVideoTextStyle = TextStyle(
+  fontFamily: kFontFamily,
+  fontSize: k20FontSize,
+  color: Colors.white60,
 );
 
 //Decorations

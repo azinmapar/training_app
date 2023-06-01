@@ -1,4 +1,4 @@
-import 'package:video_player/consts/consts.dart';
+import '../consts/consts.dart';
 import 'api_helper.dart';
 
 class InfoModel {

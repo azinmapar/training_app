@@ -60,6 +60,9 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    namespace 'com.azinmapar.training_app'
+
 }
 
 flutter {

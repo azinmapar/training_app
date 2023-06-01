@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/consts/app_colors.dart';
+import '../consts/app_colors.dart';
 import '../consts/consts.dart';
 
 class CustomFirstContainer extends StatelessWidget {

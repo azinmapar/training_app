@@ -1,4 +1,4 @@
-package com.azinmapar.video_player
+package com.azinmapar.training_app
 
 import io.flutter.embedding.android.FlutterActivity
 
